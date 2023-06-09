@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+}
+
+.animated-upwards {
+  transition: transform 500ms;
+}
+
+.animated-upwards:hover {
+  transform: translateY(-5px);
+  transition: transform 250ms;
+}
+
+.logo-animated {
+  transition: transform 300ms;
+}
+
+.logo-animated:hover {
+  transform: translate(2px, 2px);
+  transition: transform 250ms;
+}
