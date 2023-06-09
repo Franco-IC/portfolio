@@ -10,7 +10,7 @@ const skills = techStack.length;
 
 function About() {
   const { repos } = useContext(ReposContext);
-  const proyectos = repos?.length - 1 || "Cargando";
+  const proyectos = repos?.length - 2 || "Cargando";
 
   return (
     <Grid
