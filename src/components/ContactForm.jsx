@@ -26,8 +26,12 @@ function ContactForm() {
     e.preventDefault();
     setLoading(true);
 
-    if (!formState.name || !formState.email || !formState.message) {
-      triggerAlert("warn", "Uno o más campos están vacíos.");
+    if (
+      !formState.name.trim() ||
+      !formState.email.trim() ||
+      !formState.message.trim()
+    ) {
+      triggerAlert("warn", "One or more fields are empty.");
       setLoading(false);
       return;
     }
@@ -38,8 +42,8 @@ function ContactForm() {
       from_email: formState.email,
       to_email: "francoit1999@gmail.com",
       message: `
-      Correo: ${formState.email} 
-      Mensaje: ${formState.message}
+      Mail: ${formState.email} 
+      Message: ${formState.message}
       `,
     };
 
@@ -51,14 +55,14 @@ function ContactForm() {
 
         triggerAlert(
           "success",
-          "¡Gracias por tu mensaje! Me contactaré pronto."
+          "Thanks for your message! I'll be contacting you soon."
         );
       },
       (error) => {
         setLoading(false);
         triggerAlert(
           "error",
-          "Hubo un error al enviar el mensaje. Por favor, intenta nuevamente en unos minutos."
+          "There was an error sending your message. Please try again in a few minutes."
         );
         console.log("ERROR", error.status, error.text);
       }
@@ -69,7 +73,7 @@ function ContactForm() {
     <div className="ml-[40px] p-5 text-left rounded-lg bg-gradient-to-br from-sky-950 to-indigo-800  shadow-md shadow-black lg:p-10 lg:w-[900px] lg:h-[720px] lg:pt-[60px] lg:m-auto lg:mb-[60px]">
       <form onSubmit={handleSubmit} className="flex flex-col gap-8">
         <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">Nombre</span>
+          <span className="text-white font-medium mb-4">Name</span>
           <input
             autoComplete="off"
             maxLength={40}
@@ -77,7 +81,7 @@ function ContactForm() {
             name="name"
             value={formState.name}
             onChange={handleChange}
-            placeholder="Tu nombre"
+            placeholder="Your name"
             className="py-4 px-6 placeholder:text-secondary text-white bg-slate-950 rounded-lg outline-none border-none font-medium"
           />
         </label>
@@ -90,20 +94,20 @@ function ContactForm() {
             maxLength={40}
             value={formState.email}
             onChange={handleChange}
-            placeholder="tucorreo@ejemplo.com"
+            placeholder="adress@example.com"
             className="py-4 px-6 placeholder:text-secondary text-white bg-slate-950 rounded-lg outline-none border-none font-medium"
           />
         </label>
 
         <label className="flex flex-col">
-          <span className="text-white font-medium mb-4">Mensaje</span>
+          <span className="text-white font-medium mb-4">Message</span>
           <textarea
             rows={8}
             maxLength={700}
             name="message"
             value={formState.message}
             onChange={handleChange}
-            placeholder="Tu mensaje"
+            placeholder="Your message"
             className="resize-none py-4 px-6 placeholder:text-secondary text-white bg-slate-950 rounded-lg outline-none border-none font-medium"
           />
         </label>
@@ -114,7 +118,7 @@ function ContactForm() {
           variant="outlined"
           endIcon={loading ? <CircularProgress size={20} /> : <Send />}
         >
-          {loading ? "Enviando..." : "Enviar"}
+          {loading ? "Sending..." : "Send"}
         </Button>
       </form>
     </div>

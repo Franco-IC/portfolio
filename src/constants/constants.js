@@ -1,21 +1,20 @@
-export const navbarPages = ["About", "Proyectos", "Skills", "Contacto"];
+export const navbarPages = ["About", "Projects", "Skills", "Contact"];
 
 export const aboutMeText = {
-  title: "Soy un desarrollador de Buenos Aires, Argentina.",
-  body: "Utilizo tecnologías como JavaScript, React, Node.js, express.js, MongoDB y muchas otras que vas a poder ver más adelante.",
+  title: "I'm a developer from Buenos Aires, Argentina.",
+  body: "I work with technologies like JavaScript, React, Node.js, express.js, MongoDB and many others you will be able to check further ahead.",
   body2:
-    "Me gusta aprender nuevas tecnologías y mejorar mis habilidades constantemente, por lo que estoy siempre abierto a nuevos desafíos que me ayuden en esa mejora constante.",
+    "I like learning new technologies and improve my skills constantly, therefore I'm always open to new challenges that help me in that constant improvement.",
   closing:
-    "Más adelante vas a poder encontrar proyectos con sus respectivos links tanto a deploys como a sus repositorios en GitHub, las tecnologías que utilizo para llevar a cabo dichos proyectos así como también métodos que te ofrezco para ponernos en contacto, ¡Gracias por tu tiempo!",
+    "Ahead you will be able to find projects that I developed with their respective links to their deploy and GitHub repository, as well as the technologies that I use to build those projects and methods that I offer you to get in touch with me, thanks for your time!",
 };
 
 export const projectsText = {
-  title: "Proyectos.",
-  body: "Proyectos que realicé para practicar nuevos conocimientos/herramientas, cada uno tiene su breve descripción, tecnologías utilizadas para desarrollarlo y links tanto a una demo en vivo, como a su repositorio en GitHub.",
+  title: "Projects.",
+  body: "Projects that I made to practice new knowledge/tools, each of them have their own brief description, technologies used to develop it in addition to links to a live demo, as well as their GitHub repository.",
 };
 
 export const contactText = {
-  title: "Contacta conmigo.",
-  body: "Si mi perfil llega a ser de tu interés, no dudes en contactar conmigo a través de LinkedIn o enviándome un mail mediante el siguiente formulario, no tardaré en responderte.",
-  closing: "¡Espero tu mensaje!",
+  title: "Contact with me.",
+  body: "If my profile it's of interest to you, don't doubt contacting with me through LinkedIn or sending me an email by means of the following form, I won't take long to answer you.",
 };

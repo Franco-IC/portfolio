@@ -102,7 +102,7 @@ function ResponsiveNavbar() {
                       duration={600}
                       className="font-sans"
                     >
-                      {page == "About" ? "Sobre mi" : page}
+                      {page}
                     </Link>
                   </MenuItem>
                 ))}
@@ -145,7 +145,7 @@ function ResponsiveNavbar() {
                     sx={{ my: 2, color: "white", display: "block" }}
                     className="animated-upwards font-sans"
                   >
-                    {page == "About" ? "Sobre mi" : page}
+                    {page}
                   </Button>
                 </Link>
               ))}

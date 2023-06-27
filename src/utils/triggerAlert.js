@@ -15,8 +15,7 @@ export default function triggerAlert(alertType, message) {
     case "success":
       toast.success(message, {
         ...alertOptions,
-        position: "bottom-right",
-        className: "text-[16px]",
+        className: "mt-[70px] text-[16px]",
       });
       break;
 

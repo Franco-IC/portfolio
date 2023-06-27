@@ -9,7 +9,7 @@ export default function Contact() {
       item
       xs={2}
       className="m-auto w-full max-w-fit bg-slate-900 text-white text-center p-10 min-h-[600px] place-content-center place-items-center lg:max-w-none"
-      id="Contacto"
+      id="Contact"
     >
       <div className="mt-[50px] mb-[80px] m-auto">
         <FadeIn>

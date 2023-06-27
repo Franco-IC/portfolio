@@ -16,7 +16,7 @@ function Projects() {
       item
       xs={2}
       className="m-auto text-center max-w-fit lg:max-w-none"
-      id="Proyectos"
+      id="Projects"
     >
       <div className="mb-[120px] px-5 lg:p-0  ">
         <Appear duration={1.3}>

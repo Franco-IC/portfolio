@@ -19,9 +19,9 @@ function MainContent() {
         <Projects />
         <Divider className="bg-slate-950 mt-[80px]" />
 
-        <Skills id="Skills" />
+        <Skills />
 
-        <Contact id="Contacto" />
+        <Contact />
       </Grid>
 
       <Divider className="bg-slate-950" />

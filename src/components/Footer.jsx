@@ -57,7 +57,7 @@ function Footer() {
         <div className="m-auto mt-5  w-[90%] h-auto  flex justify-between items-center gap-8">
           <span>
             <Typography className="text-[18px] font-[Poppins] mt-4 mb-2">
-              Desarrollado utilizando:
+              Developed with:
             </Typography>
 
             <div className="flex flex-row flex-wrap ">

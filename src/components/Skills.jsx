@@ -12,7 +12,7 @@ function Skills() {
     >
       <FadeIn>
         <Typography className="mt-[100px] max-w-screen-sm text-center text-2xl text-[#dddddd] font-mono lg:max-w-none lg:mb-[20px] lg:text-5xl">
-          Tecnologías que utilizo para mis proyectos:
+          Technologies that I use for my projects:
         </Typography>
       </FadeIn>
 

@@ -46,8 +46,8 @@ function ProjectCard({ props }) {
           </Typography>
 
           <Typography className="mt-[20px] font-sans ">
-            <span className="font-semibold">Última modificación:</span>{" "}
-            {getRepoDate(repo.pushed_at)}.
+            <span className="font-semibold">Last update at:</span>{" "}
+            {getRepoDate(repo.pushed_at)}
           </Typography>
 
           <div>

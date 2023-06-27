@@ -10,7 +10,7 @@ const skills = techStack.length;
 
 function About() {
   const { repos } = useContext(ReposContext);
-  const proyectos = repos?.length - 2 || "Cargando";
+  const proyectos = repos?.length - 2 || "Loading";
 
   return (
     <Grid
@@ -24,11 +24,11 @@ function About() {
           <div className="mx-10 w-auto p-6 mb-10  bg-gradient-to-br from-indigo-800 to-violet-950 rounded-xl shadow-lg shadow-black lg:w-auto lg:m-auto lg:p-12">
             <div className="text-left lg:w-fit">
               <Typography className="text-2xl lg:text-3xl font-[Poppins] font-semibold">
-                ¡Hola! soy{" "}
+                Hey! I'm{" "}
                 <span className="text-[#ab84ff] font-bold">Franco</span>.
               </Typography>
               <Typography className="text-xl lg:text-1xl font-[Poppins] mt-2 font-semibold">
-                Desarrollador Web Full Stack. (MERN)
+                MERN Stack Web Developer
               </Typography>
             </div>
 
@@ -48,11 +48,11 @@ function About() {
             {repos ? (
               <>
                 <Typography variant="h5" className="font-mono">
-                  Proyectos: {proyectos}{" "}
+                  Projects: {proyectos}{" "}
                 </Typography>{" "}
                 <br />
                 <Typography variant="h5" className="font-mono">
-                  Tecnologías: {skills}{" "}
+                  Technologies: {skills}{" "}
                 </Typography>
               </>
             ) : (

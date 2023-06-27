@@ -7,7 +7,7 @@ function getRepoDate(repoDate) {
     minute: "2-digit",
     hour12: false,
     timeZone: "America/Argentina/Buenos_Aires",
-  })}`;
+  })} (Buenos Aires, Argentina)`;
 
   return date;
 }
