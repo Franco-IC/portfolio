@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-function Appear({ children, once = true, duration = 1 }) {
+function Appear({ children, once = true, duration = 0.8 }) {
   return (
     <motion.div
       initial="hidden"

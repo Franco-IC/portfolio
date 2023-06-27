@@ -1,7 +1,7 @@
 export default function getRepoScreenshotSrc(repoDescription) {
-  const defaultLink =
+  const defaultImageLink =
     "https://res.cloudinary.com/dntnaemjx/image/upload/v1669054657/code_i2okww.png";
-  const link = repoDescription.split("Screenshot: ");
+  const imageLink = repoDescription.split("Screenshot: ");
 
-  return link[1] ? link[1].split("Stack: ")[0] : defaultLink;
+  return imageLink[1] ? imageLink[1].split("Stack: ")[0] : defaultImageLink;
 }

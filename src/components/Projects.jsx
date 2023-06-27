@@ -19,7 +19,7 @@ function Projects() {
       id="Projects"
     >
       <div className="mb-[120px] px-5 lg:p-0  ">
-        <Appear duration={1.3}>
+        <Appear>
           <Typography
             variant="h3"
             className="mb-5 text-slate-50 font-mono text-left underline underline-offset-[12px] font-bold "

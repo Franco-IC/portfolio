@@ -69,7 +69,7 @@ function Footer() {
                         tooltip: {
                           sx: {
                             fontSize: "13px",
-                            color: "white", //rgba(11, 181, 98, 1)
+                            color: "white",
                             padding: "10px",
                             fontFamily: "system-ui",
                             letterSpacing: "1px",
