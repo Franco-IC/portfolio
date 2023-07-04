@@ -4,7 +4,7 @@ import React from "react";
 function Loader() {
   return (
     <div>
-      <p className="mb-5 font-mono">Cargando... </p>
+      <p className="mb-5 font-mono">Loading... </p>
       <CircularProgress />
     </div>
   );
