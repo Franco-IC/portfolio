@@ -26,7 +26,7 @@ function Skills() {
                   TransitionComponent={Zoom}
                   TransitionProps={{ timeout: 300 }}
                   placement="bottom"
-                  className="text-[24px] "
+                  className="text-[24px]"
                   componentsProps={{
                     tooltip: {
                       sx: {
@@ -44,7 +44,9 @@ function Skills() {
                     id={skill}
                     src={techStackLinks[techStack[i]]}
                     alt={skill === "JWT" ? "JSON Web Token" : skill}
-                    className="w-[80px] h-[80px] lg:w-[110px] lg:h-[110px] animated-upwards m-auto "
+                    className={`w-[60px] h-[60px] lg:w-[${
+                      skill === "React" ? "120" : "100"
+                    }px] lg:h-[100px] animated-upwards m-auto`}
                   />
                 </Tooltip>
               </div>

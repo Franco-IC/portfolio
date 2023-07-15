@@ -155,11 +155,15 @@ function ResponsiveNavbar() {
                 <a
                   href="https://www.linkedin.com/in/franco-cuellar/"
                   target="_blank"
-                  className="mr-[10px]"
+                  className="mr-[10px] hover:text-sky-700 transition-colors duration-300 ease-in-out"
                 >
                   <LinkedIn fontSize="large" />
                 </a>
-                <a href="https://github.com/Franco-IC" target="_blank">
+                <a
+                  href="https://github.com/Franco-IC"
+                  target="_blank"
+                  className="hover:text-zinc-700 transition-colors duration-300 ease-in-out"
+                >
                   <GitHubIcon fontSize="large" />
                 </a>
               </span>
