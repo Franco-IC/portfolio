@@ -48,7 +48,7 @@ function About() {
             {repos ? (
               <>
                 <Typography variant="h5" className="font-mono">
-                  Projects: {proyectos}{" "}
+                  Projects: {proyectos > 0 ? proyectos : "Cargando"}{" "}
                 </Typography>{" "}
                 <br />
                 <Typography variant="h5" className="font-mono">
